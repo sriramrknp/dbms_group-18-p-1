@@ -1,0 +1,474 @@
+/* style sheet of css for resume html. */
+/* 24/01/2022. */
+
+/* body style. */
+body{
+    /* background: linear-gradient(to bottom, pink, lightblue); */
+    background-color: whitesmoke;
+    font-size: 2em;
+    margin: 0;
+    text-align: center; 
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Top backround image. */
+.back-img {
+    background-image: url('../3rdParty/back-13.jpeg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 90vh;
+}
+
+/* My image */
+.my-img {
+    background-image: url('../3rdParty/my-img-one.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    float: right;
+    margin: 0 40px;
+    margin-top: 60px;
+    border-radius: 30px;
+    width: 350px;
+    height: 350px;
+}
+
+/* Text before MY img */
+.name{
+    /* font-family: 'Noto Serif Display', serif; */
+    font-family: 'Noto Serif Display', serif;
+    font-family: 'Source Code Pro', monospace;
+    margin-top: 80px;
+    align-content: center;
+    color: lightyellow;
+    text-align: center;
+    font-size: 54px;
+}
+
+.name-one {
+    margin-top: 0;
+    align-content: center;
+    color: lightyellow;
+    text-align: center;
+    font-size: 40px;
+}
+
+/* Navigation bar */
+nav {
+    overflow: visible;
+    box-sizing: border-box;
+    position: fixed;
+    background-image: linear-gradient(to left, rgb(229, 226, 226) , rgb(229, 226, 226));
+    height: 90px;
+    width: 100%;
+}
+
+/* Logo */
+ .logo {
+    margin-top: 20px;
+    width: 50px;
+    height: 50px;
+}
+
+label.logo-label {
+    float: left;
+    box-sizing: border-box;
+    padding: 0 100px;
+}
+
+nav ul {
+    float: right;
+    margin-right: 50px;
+    margin-top: 0;
+    padding-top: 25px;
+}
+nav ul li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+/* Navigation bar links. */
+nav ul li a {
+    font-family: 'Noto Serif Display', serif;
+    font-family: 'Orbitron', sans-serif;
+    font-family: 'Source Code Pro', monospace;
+    padding: 7px 13px;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+/* Hover style. */
+.linksNav:hover {
+    background-color: orange;
+    border-radius: 4px;
+    color: white;
+}
+
+
+/* line after menu bar */
+.line {
+    margin-top: 4%;
+    margin-bottom: 4%;
+    width: 90%;
+}
+
+/* Welcome video */
+.video {
+    background-repeat: no-repeat;
+    margin-top: 10px;
+    width: 576px;
+    height: 324px;
+    float: none;
+    border: 2px solid white;
+    border-radius: 20px;
+}
+@media (max-width: 100%) {
+    .video { display: none; }
+    body {
+      background: url("../3rdParty/backround-resume.png") no-repeat;
+      /* background-size: cover; */
+    }
+}
+
+/* quote. */
+.quote {
+    font-family: 'Comforter', cursive;
+    font-family: 'Playfair Display', serif;
+    font-size: 150%;
+    margin: 30px 0;
+}
+
+/* About me */
+#heading-about-me{
+    font-size: 120%;
+    margin: 30px;
+    margin-top: 60px;
+}
+
+.about-me {
+    padding: 20px;
+    font-size: 80%;
+    margin: 0 60px;
+    margin-bottom: 5%;
+    display: grid;
+    grid-template-rows: 20% 20%;
+    height: 450px;
+    width: auto;
+    border: 2px solid black;
+}
+
+.about-me:hover{
+    background-color: rgba(204, 202, 202, 0.383);
+    /* border: 2px solid black; */
+}
+
+.about-info{
+    margin: 20px;
+    margin-bottom: 0;
+    font-family: 'Amaranth', sans-serif;
+    font-family: 'Julius Sans One', sans-serif;
+    font-family: 'Noto Serif Display', serif;
+    font-family: 'Orbitron', sans-serif;
+    font-family: 'Source Code Pro', monospace;
+}
+
+
+/* Info */
+.in-about-me-info {
+    text-align: left;
+    font-family: 'Comforter', cursive;
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Playfair Display', serif;
+}
+
+.basic-info-heading{
+    margin: 0;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.basic-info{
+    margin: 0;
+    margin-left: 30%;
+}
+
+
+/* Skills */
+.skills{
+    margin-top: 2%;
+    border: 2px solid black;
+    margin: 0 60px;
+    padding: 20px;
+}
+
+.skills:hover{
+    background-color: rgba(204, 202, 202, 0.383);
+}
+
+.skills-ul{
+    text-align: left;
+    text-decoration: none;
+    list-style: none;
+    font-size: 20px;
+}
+
+.skills-li{
+    font-family: 'Amaranth', sans-serif;
+    font-family: 'Julius Sans One', sans-serif;
+    font-family: 'Noto Serif Display', serif;
+    font-family: 'Orbitron', sans-serif;
+    font-family: 'Source Code Pro', monospace;
+
+    margin: 5px;
+}
+
+
+/* Image between about me and Resume */
+.back-img-one{
+    background-image: url('../3rdParty/back-6.jpeg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 50vh;
+}
+
+.resume-next{
+    position: relative;
+    color: white;
+}
+
+.resume-text{
+    padding-top: 200px;
+}
+
+/* Resume */
+/* to be added */
+
+.resume-hea{
+    margin-top: 40px;
+    font-size: 120%;
+}
+
+.edu-heading{
+    margin-top: 5%;
+    margin: 3% 30%;
+    width: 40%;
+}
+
+.education li{
+    font-size: 80%;
+    font-family: 'Amaranth', sans-serif;
+    font-family: 'Julius Sans One', sans-serif;
+    font-family: 'Noto Serif Display', serif;
+    font-family: 'Orbitron', sans-serif;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.edu-institues{
+    border: 2px solid black;
+    margin: 0 60px 30px 60px;
+    padding: 10px 2%;
+    text-decoration: none;
+    list-style: none;
+    text-align: left;
+    background: rgba(128, 126, 121, 0.301);
+}
+
+.edu-institues:hover{
+    background-color: rgba(171, 223, 205, 0.534);
+}
+
+.volunteering-hea{
+    margin-top: 5%;
+    margin: 3% 30%;
+    width: 40%;
+}
+
+.volunteering{
+     background: rgba(128, 126, 121, 0.644);
+    border: 2px solid black;
+    margin: 0 60px 30px 50px;
+    padding: 10px 10px;
+    text-decoration: none;
+    text-align: left;
+    list-style: none;
+}
+
+.volunteering li{
+    font-size: 80%;
+    font-family: 'Amaranth', sans-serif;
+    font-family: 'Julius Sans One', sans-serif;
+    font-family: 'Noto Serif Display', serif;
+    font-family: 'Orbitron', sans-serif;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.achivements {
+    background: rgba(128, 126, 121, 0.644);
+    border: 2px solid black;
+    margin: 0 60px 30px 50px;
+    padding: 10px 10px;
+    text-decoration: none;
+    text-align: left;
+    list-style: none;
+}
+
+.volunteering:hover{
+    background-color: rgba(161, 175, 170, 0.507);
+}
+
+.achivements:hover{
+    background-color: rgba(159, 170, 166, 0.507);
+}
+
+/* .line2 {
+    transform:translate(12.5%);
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 90%;
+} 
+*/
+
+/* connect me */
+#connect-me{
+    padding: 20px;
+    font-family: 'Comforter', cursive;
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Playfair Display', serif;
+    text-align: left;
+    background: rgba(128, 126, 121, 0.644);
+}
+
+/* Image between connect me and footer */
+.back-img-two{
+    background-image: url('../3rdParty/back-18.jpeg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 40vh;
+}
+
+/* connect me style. */
+/* .connect {
+    font-family: 'Comforter', cursive;
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Playfair Display', serif;
+    text-align: left;
+    background: rgba(128, 126, 121, 0.644);
+} */
+
+/* footer */
+.footer {
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-bottom: 0;
+    background: rgba(128, 126, 121, 0.644);
+}
+
+/* div of social site links */
+.links{
+    margin: 0;
+    padding: 0;
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 50px 50px 50px 50px;
+    position: absolute;
+    left: 43%;
+    right: 0;
+    width: 15%;
+    height: 70px;
+}
+
+
+/* logo links */
+.insta{
+    height: 40px;
+    width: 40px;
+    margin: 10px 0;
+    padding-right: 10px; 
+    transition: transform 0.2s; 
+    border-radius: 20px
+}
+.twitter{
+    height: 40px;
+    width: 40px;
+    margin: 10px 0;
+    padding: 10px 0;
+    transition: transform 0.2s;
+    border-radius: 20px;
+}
+.linkedin{
+    height: 40px;
+    width: 40px;
+    padding: 10px 0;
+    margin: 10px 0;
+    transition: transform 0.2s;
+    border-radius: 20px;
+}
+.github{
+    height: 40px;
+    width: 40px;
+    margin: 10px 0;
+    padding-left: 10px;
+    transition: transform 0.2s;
+    border-radius: 20px
+}
+
+
+/* logo hover animation */
+.insta:hover {
+    transform: scale(1.4);
+}
+.twitter:hover {
+    transform: scale(1.4);
+}
+.linkedin:hover {
+    transform: scale(1.4);
+}
+.github:hover {
+    transform: scale(1.4);
+}
+
+/* line after social media links */
+.line-div{
+    align-content: center;
+}
+
+.line-two {
+    margin-top: 100px;
+    margin-bottom: 20px;
+    padding: 0;
+    width: 70%;
+    color: black;
+}
+
+/* copy right */
+.copyright {
+    font-family: 'Comforter', cursive;
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Playfair Display', serif;
+    font-size: 90%;
+}
+
+/* top logo */
+.top-logo {
+    background-image: url('../3rdParty/top-icon.png');
+    float: right;
+    border-radius: 35px;
+    margin: 0;
+    width: 70px;
+    height: 70px;
+}
+
+.top-logo-link{
+    margin: 0;
+}

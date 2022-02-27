@@ -1,0 +1,279 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #d9d9d9;
+}
+html{
+  scroll-behavior: smooth;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  flex-direction: column;
+}
+.back-img {
+  width: 100%;
+  height: 80vh;
+  background-image: url("back-tech-gad.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.navbar {
+  overflow: hidden;
+  position: fixed;
+  height: 80px;
+  width: 100%;
+  background-color: rgba(78, 79, 82, 0.4);
+  background-image: linear-gradient(
+    to left,
+    rgba(229, 226, 226, 0.746),
+    #353531c9
+  );
+}
+
+.logo {
+  margin-top: 0.4%;
+  float: left;
+  width: 70px;
+  height: 70px;
+}
+
+.navbar ul {
+  /* float: right; */
+  margin-left: 3%;
+}
+.navbar ul li {
+  list-style: none;
+  margin: 29px 2%;
+  display: inline-block;
+}
+
+a {
+  /* margin: 40px; */
+  margin: 40px 0%;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: white;
+}
+.home:hover {
+  color: #ecb556;
+}
+/* ABOUT-SITE SECTION */
+#about-site .about-site {
+  background-color: #a6a6a6;
+  height: 70vh;
+  width: 100%;
+}
+.about-site h1 {
+  padding-bottom: 20px;
+  font-size: 40px;
+}
+hr{
+  height:3px;
+  width: 5%;
+  margin-bottom: 3%;
+  color:#000000;
+  background-color:rgb(0, 0, 0);
+}
+.about-site p {
+  font-size: 20px;
+}
+/* END OF ABOUT SITE SECTION*/
+
+#teammates{
+  text-align: center;
+  font-size: 120%;
+  margin-top: 5%;
+}
+
+.flex-container {
+  margin: 5%;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 30px;
+  text-align: center;
+}
+
+.one-img {
+    background-image: url('manvanth.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    width: 600px;
+    height: 600px;
+}
+
+.two-img {
+    background-image: url('ram-sunil.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    width: 600px;
+    height: 600px;
+}
+
+.three-img {
+    background-image: url('hemanth.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    width: 600px;
+    height: 600px;
+}
+
+.four-img {
+    background-image: url('sriram.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    width: 600px;
+    height: 600px;
+}
+
+.flex-item-one {
+  background-color: d9d9d9;
+  padding: 10px;
+  flex: 30%;
+}
+
+.last-img-div{
+  background-color: #d9d9d9;
+}
+
+.last-img {
+    background-image: url('rudra.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 600px;
+    height: 600px;
+    margin-left: 30%;
+    margin-bottom: 50px;
+    border-radius: 50%;
+}
+
+
+/* Responsive layout - makes a one column-layout instead of a two-column layout */
+@media (max-width: 800px) {
+  .flex-item-right, .flex-item-left {
+    flex: 100%;
+  }
+}
+
+
+
+
+
+
+
+/* JAGADESH SECTION */
+#jagadesh .jagadesh {
+  background-color: #a6a6a6;
+  height: 70vh;
+  width: 100%;
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; */
+  text-align: center;
+}
+.jagadesh h1 {
+  padding-bottom: 20px;
+  font-size: 40px;
+  padding-top: 50px;
+}
+.jagadesh .info{
+  line-height: 200%;
+  text-transform: uppercase;
+}
+.jagadesh hr{
+  height:3px;
+  width: 8%;
+  margin-bottom: 3%;
+  color:#000000;
+  background-color:rgb(0, 0, 0);
+  margin-left: 45vw;
+}
+.jagadesh p {
+  font-size: 20px;
+}
+/* END OF JAGADESH SECTION */
+
+.topicon{   
+    float: right;
+    margin-right: 2%;
+}
+
+/* COLLEGE PIC SECTION */
+#clg-pic .clg-pic {
+  background-image: url(college\ logo.jpg);
+  width: 100%;
+  height: 80vh;
+  opacity: 0.8;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+
+
+#clg-pic .clg-pic::after {
+  content: "";
+  position: absolute;
+  background-color: black;
+}
+
+
+
+#clg-pic a {
+  font-size: 18px;
+}
+#clg-pic a:hover {
+  color: red;
+}
+/* END OF COLLEGE PIC SECTION */
+
+/* QUOTES SECTION */
+#quotes .quotes {
+  height: 30vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+/* END OF QUOTES SECTION */
+
+/* FOOTER SECTION */
+/* #footer .footer {
+  width: 100%;
+  height: 300px;
+  text-align: center;
+  background-color: #545454;
+} */
+#footer .copyrights{
+  color: white;
+  padding-top: 50px;
+}
+#footer .footer{
+  color: #fff;
+  background-color: #737373;
+  height: 450px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.footer .college{
+  text-align: left;
+  margin-left: 4%;
+  padding-top: 20px;
+  line-height: 1.5;
+}
+
+/* END OF FOOTER SECTION */
+
+ 

@@ -1,0 +1,339 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 20px;
+  color: black;
+  overflow-x: hidden;
+  position: relative;
+}
+html {
+  font-size: 20px;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+}
+.container {
+  min-height: 100vh;
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+/* navbar section */
+.navbar nav {
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 80px;
+  width: 100%;
+  position: fixed;
+}
+.navbar .mainpage {
+  padding-left: 80px;
+  font-size: 30px;
+  line-height: 80px;
+  list-style: none;
+  text-decoration: none;
+  color: white;
+}
+.navbar nav ul {
+  float: right;
+  margin-right: 20px;
+}
+.navbar nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  padding: 0 20px;
+}
+.navbar nav ul li a {
+  color: white;
+  list-style: none;
+  text-decoration: none;
+  font-size: 20px;
+}
+.navbar a:hover {
+  color: blue;
+}
+.checkbtn {
+  font-size: 20px;
+  margin-top: 20px;
+  margin-right: 20px;
+  float: right;
+  cursor: pointer;
+  display: none;
+}
+#check {
+  display: none;
+}
+@media screen and (max-width: 952px) {
+  .navbar nav {
+    background-color: rgba(0, 0, 0, 0.2);
+    position: fixed;
+  }
+  .navbar nav ul {
+    position: fixed;
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(0, 0, 0, 0.2);
+    top: 80px;
+    left: -100%;
+    transition: all 0.5s;
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-left: 35%;
+  }
+  .checkbtn {
+    display: block;
+  }
+  .navbar nav ul li a {
+    font-size: 30px;
+    color: white;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+}
+
+/* end of navbar section */
+
+/* home section*/
+.home {
+  background-image: url("./background-img.jpg");
+  background-size: cover;
+  background-position: center;
+}
+#home .home {
+  padding: 0 70px;
+  justify-content: flex-start;
+}
+#home h1 {
+  color: black;
+  display: block;
+  font-size: 40px;
+}
+#home p {
+  color: black;
+  display: block;
+  font-size: 25px;
+}
+/* end of home section */
+
+/* about section */
+#about .about {
+  flex-direction: column;
+  /* background-color: #e0e2e4; */
+}
+#about .section-title h1 {
+  text-align: center;
+  font-size: 40px;
+}
+#about .section-title p {
+  margin-top: 30px;
+  text-align: center;
+  font-weight: bold;
+}
+#about .about .col-left img {
+  width: 350px;
+  height: 410px;
+}
+#about .col-right {
+  list-style: none;
+  padding: 20px;
+  /* background-color: blue; */
+}
+#about .left-and-right {
+  margin: 40px 0;
+  display: flex;
+  flex-direction: row;
+}
+#about .col-right ul li {
+  list-style: none;
+  padding: 20px 0;
+}
+@media screen and (max-width: 600px) {
+  #about .left-and-right {
+    display: flex;
+    flex-direction: column;
+  }
+}
+/* end of about section */
+
+/* skills section */
+#myskills .myskills {
+  flex-direction: column;
+  /* background-color: #e0e2e4; */
+}
+.skills {
+  width: 70%;
+  height: 70%;
+}
+#myskills .section-title {
+  margin-bottom: 40px;
+  font-size: 30px;
+  color: black;
+}
+#myskills .sub-name {
+  color: black;
+}
+.subject {
+  margin: 20px;
+}
+.skills-black {
+  background-color: paleturquoise;
+  width: 100%;
+  height: 28px;
+  border-radius: 10px;
+}
+.skills-grey {
+  background-color: black;
+  border-radius: 10px;
+}
+#myskills .skills {
+  box-shadow: 0 0 20px skyblue;
+  border-radius: 20px;
+}
+.skills {
+  /* background-color: aqua; */
+  margin-left: 20px;
+  margin-right: 20px;
+}
+/* end of skills section */
+
+/* education section */
+#education .education {
+  flex-direction: column;
+  text-align: center;
+  padding-top: 100px;
+}
+.education-title {
+  font-size: 40px;
+}
+.education .deatils {
+  align-items: flex-start;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  /* background-color: aqua; */
+  border-radius: 20px;
+  margin: 50px;
+  padding: 20px;
+  box-shadow: 0 0 20px blue;
+}
+#education .deatils h1 {
+  margin-top: 10px;
+}
+
+/* end of education */
+
+/* Team members section */
+#team .team {
+  flex-direction: column;
+  margin: 0 auto;
+  /* max-width: 1200px; */
+}
+.team-mates {
+  width: 400px;
+}
+#team .section-title {
+  font-size: 30px;
+  padding-bottom: 50px;
+}
+.team-mate {
+  width: 80%;
+  margin: 30px;
+  border-radius: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  /* box-shadow: 0 0 10px orange; */
+  flex-direction: column;
+}
+#team .team-mate img {
+  border-radius: 50%;
+}
+@media only screen and (min-width: 1200px) {
+  #team .team {
+    flex-direction: column;
+    padding: 100px 0;
+    align-items: center;
+    justify-content: center;
+  }
+  .team .team-mates {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+}
+/* End of team members section */
+
+/* contact section */
+#contact-info .contact-info {
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+.contact-items {
+  width: 400px;
+}
+#contact-info .section-title {
+  font-size: 30px;
+}
+
+.contact-item {
+  width: 80%;
+  margin: 30px;
+  border-radius: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  box-shadow: 0 0 10px orange;
+  flex-direction: column;
+}
+.contact-item:hover {
+  box-shadow: 0 0 10px yellow;
+}
+@media only screen and (min-width: 1200px) {
+  #contact-info .contact-info {
+    flex-direction: column;
+    padding: 100px 0;
+    align-items: center;
+    justify-content: center;
+  }
+  .contact-info .contact-items {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+}
+/* end of contact us section */
+/* footer section */
+#footer {
+  background: rgba(128, 126, 121, 0.644);
+}
+.footer {
+  min-height: 200px;
+  flex-direction: column;
+}
+.socialmedia-items {
+  display: flex;
+  padding: 5px;
+}
+.socialmedia-item {
+  height: 50px;
+  width: 50px;
+  margin: 10px 10px;
+}
+/* end of footer section */
+
+.back-to-top {
+  float: right;
+  right: 0;
+  bottom: 0;
+}
