@@ -221,8 +221,8 @@ hr{
 .info .left img{
     border-top-left-radius: 25px;
     border-bottom-left-radius: 25px ;
+    background-position: center;
     height: 350px;
-    width: 100%;
 }
 
 /* trial and error */
